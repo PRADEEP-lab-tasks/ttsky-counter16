@@ -1,5 +1,24 @@
 ![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg) ![](../../workflows/test/badge.svg) ![](../../workflows/fpga/badge.svg)
 
+**# TinyTapeout 16-bit Counter Project
+
+This repository contains a 16-bit counter design submitted to TinyTapeout.
+
+## Description
+The counter increments on each clock cycle when the enable input is asserted. The least significant 8 bits are exposed on the output pins for observation. The design is implemented in Verilog and configured for the Sky130 process using OpenLane.
+
+## Repository structure
+- `src/tt_um_counter16.v` – RTL source code
+- `info.yaml` – Project metadata and pin configuration
+- `docs/info.md` – Documentation for TinyTapeout submission
+- `.github/workflows/` – CI/CD pipeline for synthesis and GDS generation
+
+## How to run
+Use OpenLane to synthesize and place-route the design:
+```bash
+./flow.tcl -design ttsky-counter16
+**
+
 # Tiny Tapeout Verilog Project Template
 
 - [Read the documentation for project](docs/info.md)
