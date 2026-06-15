@@ -5,7 +5,7 @@
 This repository contains a 16-bit counter design submitted to TinyTapeout.
 
 ## Description
-The counter increments on each clock cycle when the enable input is asserted. The least significant 8 bits are exposed on the output pins for observation. The design is implemented in Verilog and configured for the Sky130 process using OpenLane.
+This project, ttsky-counter16, is a simple hardware design written in Verilog. It implements a 16-bit counter with enable and reset functionality, intended for TinyTapeout or similar digital logic experiments. The counter increments on each clock cycle when the enable input is asserted. The least significant 8 bits are exposed on the output pins for observation. The design is implemented in Verilog and configured for the Sky130 process using OpenLane.
 
 ## Repository structure
 - `src/tt_um_counter16.v` – RTL source code
