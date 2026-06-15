@@ -70,7 +70,7 @@ module tb ();
 
     // Re-enable counting
     ui_in[0] = 1; #100;
-
+    
     $finish;
   end
 
